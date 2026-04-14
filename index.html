@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LazyRex Devlog | Engineering Insights</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --text: #c9d1d9;
+            --accent: #58a6ff;
+            --border: #30363d;
+            --card: #161b22;
+            --warning: #d29922;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .status-badge {
+            background: #238636;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .date-badge {
+            font-size: 0.85rem;
+            color: #8b949e;
+            float: right;
+        }
+
+        h1 { color: var(--accent); margin: 0; }
+        h2 { color: var(--accent); border-left: 4px solid var(--accent); padding-left: 15px; margin-top: 40px; }
+
+        .construction-banner {
+            border: 1px solid var(--warning);
+            background: rgba(210, 153, 34, 0.1);
+            color: var(--warning);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .concept-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .concept-card h3 { margin-top: 0; color: #f0f6fc; }
+
+        .tag {
+            background: #1f6feb;
+            color: white;
+            padding: 2px 8px;
+            font-size: 0.7rem;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #8b949e;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+
+        nav a { color: var(--accent); text-decoration: none; margin-right: 15px; font-weight: 500; }
+        nav a:hover { text-decoration: underline; }
+
+        .roadmap {
+            border: 1px dashed var(--border);
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        .roadmap ul { list-style: none; padding: 0; }
+        .roadmap li::before { content: "▢ "; color: var(--accent); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <span class="date-badge">Last Update: 14/04/2026</span>
+        <div class="status-badge">NODE: ACTIVE</div>
+        <h1>LazyRex Devlog</h1>
+        <p>Bitácora técnica de Brandon Padrón Villeda | Systems Solutions Engineer</p>
+        <nav>
+            <a href="https://lazyrexdev.xyz">CV PRINCIPAL</a>
+            <a href="https://github.com/MrPbrandon">GITHUB</a>
+            <a href="https://mrpbrandon.itch.io/">ITCH.IO</a>
+        </nav>
+    </header>
+
+    <div class="construction-banner">
+        ⚠️ SITE UNDER CONSTRUCTION: REWRITING MONOLITHS INTO SERVICES ⚠️
+    </div>
+
+    <div class="concept-card">
+        <h3>Propósito del Devlog</h3>
+        <p>Este espacio está diseñado para documentar la transición hacia microservicios eficientes, el uso de <strong>GCP</strong> y la optimización de costos en infraestructura. Aquí la teoría se enfrenta a la realidad de la operación.</p>
+    </div>
+
+    <h2>Ideología Técnica</h2>
+
+    <div class="concept-card">
+        <h3>Resiliencia vs. Hype</h3>
+        <p>No instalo herramientas por moda. Si una arquitectura no aporta disponibilidad o reduce la deuda técnica, no entra en mi stack. Enfocado en servicios administrados para maximizar seguridad y minimizar fallos humanos.</p>
+        <div><span class="tag">GCP</span><span class="tag">Firebase</span><span class="tag">Architecture</span></div>
+    </div>
+
+    <div class="roadmap">
+        <h3>Próximos Despliegues (Roadmap)</h3>
+        <ul>
+            <li>Comparativa: Costo Real de VM vs. SQL Administrado.</li>
+            <li>Implementación de IAM Roles para Mínimo Privilegio.</li>
+            <li>Refactorización de lazyrexdev.xyz: De la idea a la línea de código.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 LazyRexDev - Brandon Padrón Villeda</p>
+        <p style="font-size: 0.7rem;">Deploying from GitHub Pages</p>
+    </footer>
+</div>
+
+</body>
+</html>
